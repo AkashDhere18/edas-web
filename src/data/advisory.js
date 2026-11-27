@@ -84,16 +84,33 @@ export const ADVISORY_CONTACT = {
   phone: '+91 97681 46860',
 };
 
+// export const ADVISORY_FORM = {
+//   email: 'prayag.agarwal@edasprojects.com',
+//   fields: [
+//     { id: 'a-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+//     { id: 'a-org', label: 'Organisation', type: 'text', autoComplete: 'organization' },
+//     { id: 'a-email', label: 'Email', type: 'email', autoComplete: 'email', required: true },
+//     { id: 'a-phone', label: 'Phone', type: 'tel', autoComplete: 'tel' },
+//     { id: 'a-type', label: 'I am a', options: ['Developer', 'Landowner', 'Bank / NBFC', 'ARC / fund', 'Investor'] },
+//     { id: 'a-stage', label: 'Project stage', options: ['Land / pre-launch', 'Under construction', 'Stalled', 'Completed'] },
+//   ],
+//   messageId: 'pra-msg',
+//   submitLabel: 'Send enquiry',
+// };
+
 export const ADVISORY_FORM = {
-  email: 'prayag.agarwal@edasprojects.com',
+  id: 'advisory',
+  title: 'Advisory', // used in the email subject
+  email: 'prayag.agarwal@edasprojects.com', // shown to visitors if sending fails
   fields: [
-    { id: 'a-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
-    { id: 'a-org', label: 'Organisation', type: 'text', autoComplete: 'organization' },
-    { id: 'a-email', label: 'Email', type: 'email', autoComplete: 'email', required: true },
-    { id: 'a-phone', label: 'Phone', type: 'tel', autoComplete: 'tel' },
-    { id: 'a-type', label: 'I am a', options: ['Developer', 'Landowner', 'Bank / NBFC', 'ARC / fund', 'Investor'] },
-    { id: 'a-stage', label: 'Project stage', options: ['Land / pre-launch', 'Under construction', 'Stalled', 'Completed'] },
+    { id: 'a-name', name: 'name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+    { id: 'a-org', name: 'organisation', label: 'Organisation', type: 'text', autoComplete: 'organization' },
+    { id: 'a-email', name: 'email', label: 'Email', type: 'email', autoComplete: 'email', required: true },
+    { id: 'a-phone', name: 'phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
+    { id: 'a-type', name: 'clientType', label: 'I am a', options: ['Developer', 'Landowner', 'Bank / NBFC', 'ARC / fund', 'Investor', 'Other'] },
+    { id: 'a-stage', name: 'projectStage', label: 'Project stage', options: ['Land / pre-launch', 'Under construction', 'Stalled', 'Completed', 'Other'] },
   ],
   messageId: 'pra-msg',
   submitLabel: 'Send enquiry',
 };
+

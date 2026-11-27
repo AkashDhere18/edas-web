@@ -265,15 +265,31 @@ export const JOURNEY = [
   { title: 'Your home', text: 'Optional interiors, landscape and pool' },
 ];
 
+// export const PROMISE_FORM = {
+//   email: 'coordination@edasprojects.com',
+//   fields: [
+//     { id: 'v-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+//     { id: 'v-phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
+//     { id: 'v-loc', label: 'Plot location', type: 'text' },
+//     { id: 'v-size', label: 'Plot size (sq ft)', type: 'text' },
+//     { id: 'v-style', label: 'Preferred style', options: ['Not sure yet', 'Modern Tropical', 'Coastal Mediterranean', 'Luxury Contemporary'] },
+//     { id: 'v-when', label: 'When to start', options: ['Within 3 months', '3–6 months', '6–12 months', 'Just exploring'] },
+//   ],
+//   messageId: 'coo-msg',
+//   submitLabel: 'Request vision book',
+// };
+
 export const PROMISE_FORM = {
-  email: 'coordination@edasprojects.com',
+  id: 'promise',
+  title: 'Vision book request', // used in the email subject
+  email: 'coordination@edasprojects.com', // shown to visitors if sending fails
   fields: [
-    { id: 'v-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
-    { id: 'v-phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
-    { id: 'v-loc', label: 'Plot location', type: 'text' },
-    { id: 'v-size', label: 'Plot size (sq ft)', type: 'text' },
-    { id: 'v-style', label: 'Preferred style', options: ['Not sure yet', 'Modern Tropical', 'Coastal Mediterranean', 'Luxury Contemporary'] },
-    { id: 'v-when', label: 'When to start', options: ['Within 3 months', '3–6 months', '6–12 months', 'Just exploring'] },
+    { id: 'v-name', name: 'name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+    { id: 'v-phone', name: 'phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
+    { id: 'v-loc', name: 'plotLocation', label: 'Plot location', type: 'text' },
+    { id: 'v-size', name: 'plotSize', label: 'Plot size (sq ft)', type: 'text' },
+    { id: 'v-style', name: 'preferredStyle', label: 'Preferred style', options: ['Not sure yet', 'Modern Contemporary', 'Mediterranean', 'Tropical', 'Minimalist', 'Traditional', 'Luxury Contemporary'] },
+    { id: 'v-when', name: 'startWhen', label: 'When to start', options: ['Within 3 months', '3–6 months', '6–12 months', 'Just exploring'] },
   ],
   messageId: 'coo-msg',
   submitLabel: 'Request vision book',

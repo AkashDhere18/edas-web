@@ -76,19 +76,40 @@ export const TURNKEY_CONTACT = {
   phone: '+91 99751 35552',
 };
 
+// export const TURNKEY_FORM = {
+//   email: 'coordination@edasprojects.com',
+//   fields: [
+//     { id: 'c-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+//     { id: 'c-phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
+//     { id: 'c-email', label: 'Email', type: 'email', autoComplete: 'email' },
+//     {
+//       id: 'c-type',
+//       label: 'Project type',
+//       options: ['Private villa', 'Residential building', 'Hotel / hospitality', 'Commercial', 'Interiors', 'Other'],
+//     },
+//     { id: 'c-loc', label: 'Location', type: 'text' },
+//     { id: 'c-area', label: 'Approx. area (sq ft)', type: 'text' },
+//   ],
+//   messageId: 'coo-msg',
+//   submitLabel: 'Request a site visit',
+// };
+
 export const TURNKEY_FORM = {
-  email: 'coordination@edasprojects.com',
+  id: 'turnkey',
+  title: 'Turnkey construction', // used in the email subject
+  email: 'coordination@edasprojects.com', // shown to visitors if sending fails
   fields: [
-    { id: 'c-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
-    { id: 'c-phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
-    { id: 'c-email', label: 'Email', type: 'email', autoComplete: 'email' },
+    { id: 'c-name', name: 'name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
+    { id: 'c-phone', name: 'phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
+    { id: 'c-email', name: 'email', label: 'Email', type: 'email', autoComplete: 'email' },
     {
       id: 'c-type',
+      name: 'projectType',
       label: 'Project type',
       options: ['Private villa', 'Residential building', 'Hotel / hospitality', 'Commercial', 'Interiors', 'Other'],
     },
-    { id: 'c-loc', label: 'Location', type: 'text' },
-    { id: 'c-area', label: 'Approx. area (sq ft)', type: 'text' },
+    { id: 'c-loc', name: 'location', label: 'Location', type: 'text' },
+    { id: 'c-area', name: 'area', label: 'Approx. area (sq ft)', type: 'text' },
   ],
   messageId: 'coo-msg',
   submitLabel: 'Request a site visit',

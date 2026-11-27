@@ -559,3 +559,13 @@ details.more-cases[open] summary::after { content: "−"; }
 .feel li + li { border-left: 1px solid var(--line); }
 @media (prefers-reduced-motion: reduce) { .style-copy { animation: none; } }
 @media (max-width: 420px) { .feel li { font-size: .66rem; letter-spacing: .06em; } }
+
+/* Enquiry forms: error messages, honeypot, spam check */
+.field-error { font-size: .8rem; line-height: 1.4; color: #B42318; }
+:root[data-theme="dark"] .field-error { color: #F4A39A; }
+.field [aria-invalid="true"] { border-color: #B42318; }
+:root[data-theme="dark"] .field [aria-invalid="true"] { border-color: #F4A39A; }
+.form-error { background: color-mix(in srgb, #B42318 12%, var(--card)); border: 1px solid color-mix(in srgb, #B42318 35%, transparent); border-radius: 10px; padding: 14px 16px; font-size: .92rem; }
+.form .btn[disabled] { opacity: .65; cursor: progress; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.turnstile-box { min-height: 65px; }
