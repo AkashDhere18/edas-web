@@ -569,3 +569,67 @@ details.more-cases[open] summary::after { content: "−"; }
 .form .btn[disabled] { opacity: .65; cursor: progress; }
 .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .turnstile-box { min-height: 65px; }
+
+
+/* About: team members as a scrolling strip (uses the .marquee styles above) */
+.team-marquee .marquee-track { animation-duration: 60s; }
+.team-marquee .marquee-list { gap: 20px; padding: 0 10px; align-items: flex-start; }
+.team-marquee .member { width: 180px; flex: none; }
+@media (max-width: 640px) { .team-marquee .member { width: 140px; } .team-marquee .marquee-list { gap: 14px; padding: 0 7px; } }
+
+/* .team-marquee {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+} */
+
+/* .team-marquee {
+  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.35), #000 8%, #000 92%, rgba(0,0,0,.35));
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.35), #000 8%, #000 92%, rgba(0,0,0,.35));
+} */
+
+.team-marquee { -webkit-mask-image: none; mask-image: none; }
+
+/* Contact page: two contact cards per row (one per row on phones) */
+.contact-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .contact-cards { grid-template-columns: 1fr; } }
+
+
+/* Turnkey: "What we build" capability cards */
+.cap-grid { gap: 20px; }
+.cap-card { position: relative; isolation: isolate; overflow: hidden; display: grid; gap: 10px; align-content: start; padding: 28px 26px 30px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.cap-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 55%); opacity: 0; transition: opacity .3s ease; }
+.cap-card::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: linear-gradient(90deg, var(--accent), var(--brand)); transform: scaleX(0); transform-origin: left; transition: transform .4s ease; }
+.cap-num { position: absolute; top: 14px; right: 20px; font: 700 2.6rem/1 var(--f-head); letter-spacing: -.02em; color: var(--ink); opacity: .07; transition: opacity .3s ease; }
+.cap-icon { width: 54px; height: 54px; margin-bottom: 8px; border-radius: 14px; display: grid; place-items: center; color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent); transition: background .3s ease, color .3s ease; }
+.cap-icon svg { width: 26px; height: 26px; }
+.cap-card h3 { font-size: 1.14rem; }
+.cap-card p { color: var(--ink-2); font-size: .93rem; }
+.cap-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+.cap-card:hover::before { opacity: 1; }
+.cap-card:hover::after { transform: scaleX(1); }
+.cap-card:hover .cap-num { opacity: .14; }
+.cap-card:hover .cap-icon { background: var(--accent); color: #fff; }
+@media (prefers-reduced-motion: reduce) { .cap-card, .cap-card::after { transition: none; } .cap-card:hover { transform: none; } }
+
+
+/* The EDAS Promise: villa format cards (gold details, villa on a soft golden stage) */
+.fmt-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 960px) { .fmt-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); } }
+.fmt-card { --gold: #B08D4A; --gold-ink: #85652A; --stage: #FBF5E9; position: relative; display: flex; flex-direction: column; overflow: hidden; border-radius: 18px; background: linear-gradient(180deg, var(--stage) 0%, var(--card) 55%); border: 1px solid color-mix(in srgb, var(--gold) 40%, var(--line)); transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+:root[data-theme="dark"] .fmt-card { --gold: #D4B26A; --gold-ink: #D9BA78; --stage: #211D17; }
+.fmt-card::before { content: ""; position: absolute; inset: 8px; z-index: 2; border: 1px solid color-mix(in srgb, var(--gold) 24%, transparent); border-radius: 12px; pointer-events: none; }
+.fmt-stage { position: relative; aspect-ratio: 16 / 10; display: grid; place-items: end center; padding: 24px 18px 8px; background: radial-gradient(ellipse 72% 62% at 50% 72%, color-mix(in srgb, var(--gold) 28%, transparent), transparent 72%); }
+.fmt-stage::after { content: ""; position: absolute; left: 14%; right: 14%; bottom: 10px; height: 16px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, .22), transparent); }
+.fmt-stage img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; object-position: bottom; filter: drop-shadow(0 10px 14px rgba(40, 25, 5, .18)); transition: transform .5s ease; }
+.fmt-body { position: relative; z-index: 1; display: grid; justify-items: center; gap: 8px; padding: 18px 28px 30px; text-align: center; }
+.fmt-code { display: inline-flex; align-items: center; gap: 10px; font: 600 .72rem/1 var(--f-body); letter-spacing: .22em; text-transform: uppercase; color: var(--gold-ink); }
+.fmt-code::before, .fmt-code::after { content: ""; width: 22px; height: 1px; background: currentColor; opacity: .7; }
+.fmt-card h3 { font-size: 1.5rem; letter-spacing: -.01em; }
+.fmt-text { color: var(--ink-2); font-size: .93rem; }
+.fmt-specs { width: 100%; margin: 10px 0 0; display: grid; border-top: 1px solid color-mix(in srgb, var(--gold) 32%, var(--line)); }
+.fmt-specs > div { display: flex; justify-content: space-between; gap: 12px; padding: 11px 2px; border-bottom: 1px solid color-mix(in srgb, var(--gold) 18%, var(--line)); font-size: .9rem; }
+.fmt-specs dt { color: var(--ink-2); }
+.fmt-specs dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.fmt-card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -28px rgba(60, 40, 10, .45); border-color: color-mix(in srgb, var(--gold) 70%, var(--line)); }
+.fmt-card:hover .fmt-stage img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .fmt-card, .fmt-stage img { transition: none; } .fmt-card:hover, .fmt-card:hover .fmt-stage img { transform: none; } }

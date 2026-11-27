@@ -2,6 +2,7 @@ export const CONTACT_PEOPLE = [
   { entity: 'Advisory', name: 'Prayag Agarwal', email: 'prayag.agarwal@edasprojects.com', phone: '+91 97681 46860' },
   { entity: 'Construction & villas', name: 'Shailesh Dhere', email: 'shailesh.dhere@edasprojects.com', phone: '+91 99751 35552' },
   { entity: 'Site operations', name: 'Pralhad Kharat', email: 'operations@edasprojects.com', phone: '+91 87679 56623' },
+  { entity: 'Site operations', name: 'Nilesh Dhere', email: 'operations@edasprojects.com', phone: '+91 80872 25141' },
 ];
 
 export const CONTACT_OFFICES = [
@@ -11,7 +12,7 @@ export const CONTACT_OFFICES = [
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Sai+Datta+Apartment+Bal+Govind+Das+Road+Dadar+Mumbai',
   },
   {
-    city: 'Miraj',
+    city: 'Western Maharashtra',
     address: 'Office 105 & 106, Imperial Square, Ramaudyan Road, Miraj, Sangli 416410',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Imperial+Square+Ramaudyan+Road+Miraj',
   },

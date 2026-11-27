@@ -232,31 +232,57 @@ export const DESIGN_LIBRARY = [
   { image: '/images/board-40-contemporary.webp', alt: 'Contemporary villa design', caption: 'Contemporary' },
 ];
 
+// export const VILLA_FORMATS = [
+//   {
+//     code: 'EDAS 01',
+//     name: 'Weekend',
+//     text: 'Compact and easy to maintain.',
+//     specs: [['Built-up', '1,200–1,500 sq ft'], ['Plot', 'about 1,500 sq ft'], ['Bedrooms', '2']],
+//   },
+//   {
+//     code: 'EDAS 02',
+//     name: 'Family',
+//     text: 'Connected living for the whole family.',
+//     specs: [['Built-up', '1,800–2,200 sq ft'], ['Plot', '2,000–2,200 sq ft'], ['Bedrooms', '3']],
+//   },
+//   {
+//     code: 'EDAS 03',
+//     name: 'Signature',
+//     text: 'Generous volumes and outdoor living.',
+//     specs: [['Built-up', '2,500–3,000 sq ft'], ['Plot', '3,000–4,000 sq ft'], ['Bedrooms', '4']],
+//   },
+// ];
+
+// The first four stops are "Design", the last four "Build".
+
+// Villa formats (The EDAS Promise page). Images are transparent cut-outs in public/images/formats/.
 export const VILLA_FORMATS = [
   {
-    code: 'EDAS 01',
-    name: 'Weekend',
+    code: 'Format 01',
+    name: 'EDAS Classic',
+    image: '/images/edas-classic.webp',
     text: 'Compact and easy to maintain.',
     specs: [['Built-up', '1,200–1,500 sq ft'], ['Plot', 'about 1,500 sq ft'], ['Bedrooms', '2']],
   },
   {
-    code: 'EDAS 02',
-    name: 'Family',
+    code: 'Format 02',
+    name: 'EDAS Royal',
+    image: '/images/edas-royal.webp',
     text: 'Connected living for the whole family.',
     specs: [['Built-up', '1,800–2,200 sq ft'], ['Plot', '2,000–2,200 sq ft'], ['Bedrooms', '3']],
   },
   {
-    code: 'EDAS 03',
-    name: 'Signature',
+    code: 'Format 03',
+    name: 'EDAS Grande',
+    image: '/images/edas-grande.webp',
     text: 'Generous volumes and outdoor living.',
     specs: [['Built-up', '2,500–3,000 sq ft'], ['Plot', '3,000–4,000 sq ft'], ['Bedrooms', '4']],
   },
 ];
 
-// The first four stops are "Design", the last four "Build".
 export const JOURNEY = [
   { title: 'Site visit', text: 'We walk the plot and check what it allows' },
-  { title: 'Choose a format', text: 'Weekend, Family or Signature' },
+  { title: 'Choose a format', text: 'EDAS Classic, Royal or Grande' },
   { title: 'Choose a style', text: 'Tropical, Mediterranean or Contemporary' },
   { title: 'Final design', text: 'Architecture, structure, MEP and BOQ' },
   { title: 'Approvals', text: 'Applications and liaison handled' },

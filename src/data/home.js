@@ -31,6 +31,17 @@ export const HERO_SLIDES = [
       { label: 'The EDAS Promise', href: ROUTES.promise, style: 'btn-line-white' },
     ],
   },
+    {
+    image: '/images/streets-to-strength.jpeg',
+    position: '60% center', // focus point when the screen crops the image (phones, laptops)
+    label: 'Lender & special situations',
+    title: 'Stress to Strength.',
+    text: 'Turning complexity into clarity. Challenges into opportunities.',
+    actions: [
+      { label: 'Explore Advisory', href: ROUTES.advisory, style: 'btn-white' },
+      { label: 'Contact Us', href: ROUTES.contact, style: 'btn-line-white' },
+    ],
+  },
 ];
 
 export const INTRO = {

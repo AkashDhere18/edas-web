@@ -48,7 +48,7 @@ export const FOOTER = {
       ],
     },
   ],
-  addresses: ['Dadar, Mumbai 400028', 'Miraj, Sangli 416410'],
+  addresses: ['Dadar, Mumbai', 'Western Maharashtra'],
   legal: [
     'EDAS Projects Private Limited (GSTIN 27AAICE4972E2ZG) and EDAS Asset Advisors LLP.',
     '© 2026 EDAS Group · Innovate | Build | Inspire',

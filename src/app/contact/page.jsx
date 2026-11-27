@@ -22,7 +22,7 @@ export default function ContactPage() {
       <section className="section tight">
         <div className="wrap contact-cards">
           {CONTACT_PEOPLE.map((p) => (
-            <ContactCard key={p.email} {...p} />
+            <ContactCard key={p.name} {...p} />
           ))}
         </div>
       </section>

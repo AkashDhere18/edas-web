@@ -1,6 +1,6 @@
 import PageHero from '@/components/PageHero';
 import SectionHead from '@/components/SectionHead';
-import { FoundersGrid, TeamGrid } from '@/components/LeadershipGrid';
+import { FoundersGrid, TeamMarquee  } from '@/components/LeadershipGrid';
 import ClientsMarquee from '@/components/ClientsMarquee';
 import OfficeList from '@/components/OfficeList';
 import { ABOUT_HERO, ABOUT_OFFICES, FOUNDERS, STORY, TEAM } from '@/data/about';
@@ -39,7 +39,8 @@ export default function AboutPage() {
       <section className="section">
         <div className="wrap">
           <SectionHead label="Our team" title="The people behind the work" />
-          <TeamGrid team={TEAM} />
+          {/* <TeamGrid team={TEAM} /> */}
+          <TeamMarquee team={TEAM} />
         </div>
       </section>
 

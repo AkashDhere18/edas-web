@@ -45,7 +45,10 @@ export const TEAM = [
   { name: 'Darshan Bhabuje', photo: '/images/team-darshan.webp', role: 'Project Manager, Western Maharashtra' },
   { name: 'Sachin Hingmire', photo: '/images/team-sachin.webp', role: 'Project Manager, Execution & Planning' },
   { name: 'Akash Yadav', photo: '/images/team-akash.webp', role: 'Lead, Structural Steel & Fabrication' },
-  { name: 'Abid Ali', photo: '/images/team-abid.webp', role: 'Project Engineer, Site Delivery' },
+  { name : 'Sapna Dhere', photo: '/images/team-sapana-dhere.png', role: 'Devlopment'},
+  { name : 'Radhika Suryawanshi ', photo: '/images/team-radhika-suryawanshi.png', role: 'Architect'},
+  { name : 'Rohan Gurav', photo: '/images/team-rohan-gurav.png', role: 'Architect'},
+  // { name: 'Abid Ali', photo: '/images/team-abid.webp', role: 'Project Engineer, Site Delivery' },
   { name: 'Suraj Ghodake', photo: '/images/team-suraj.webp', role: 'Manager, Finance & Accounts' },
   { name: 'Vishal Wandare', photo: '/images/team-vishal.webp', role: 'Manager, Administration & Workplace' },
 ];
@@ -56,7 +59,7 @@ export const ABOUT_OFFICES = [
     address: 'Office 01 & 02, Sai Datta Apartment, near The Ruby, Bal Govind Das Road, Dadar, Mumbai 400028',
   },
   {
-    city: 'Miraj',
+    city: 'Western Maharashtra',
     address:
       'Office 105 & 106, Imperial Square, Ramaudyan Road, near ACS College, Miraj–Pandharpur Highway, Miraj, Sangli 416410',
   },

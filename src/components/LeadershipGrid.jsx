@@ -19,18 +19,42 @@ export function FoundersGrid({ founders }) {
   );
 }
 
-export function TeamGrid({ team }) {
-  return (
-    <div className="team">
-      {team.map((m) => (
-        <div className="member" key={m.name}>
-          <div className="photo">
-            <img src={m.photo} alt={m.name} loading="lazy" />
-          </div>
-          <b>{m.name}</b>
-          <span>{m.role}</span>
+// export function TeamGrid({ team }) {
+//   return (
+//     <div className="team">
+//       {team.map((m) => (
+//         <div className="member" key={m.name}>
+//           <div className="photo">
+//             <img src={m.photo} alt={m.name} loading="lazy" />
+//           </div>
+//           <b>{m.name}</b>
+//           <span>{m.role}</span>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// Team photos as a slowly scrolling strip (same marquee as the client logos).
+// The list is rendered twice so the animation loops seamlessly; the copy is hidden from screen readers.
+export function TeamMarquee({ team }) {
+  const list = (copy) =>
+    team.map((m) => (
+      <li className="member" key={m.name}>
+        <div className="photo">
+          <img src={m.photo} alt={copy ? '' : m.name} loading="lazy" />
         </div>
-      ))}
+        <b>{m.name}</b>
+        <span>{m.role}</span>
+      </li>
+    ));
+
+  return (
+    <div className="marquee team-marquee" aria-label="Our team">
+      <div className="marquee-track">
+        <ul className="marquee-list">{list(false)}</ul>
+        <ul className="marquee-list" aria-hidden="true">{list(true)}</ul>
+      </div>
     </div>
   );
 }

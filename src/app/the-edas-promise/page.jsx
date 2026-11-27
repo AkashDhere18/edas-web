@@ -4,6 +4,7 @@ import CompareSlider from '@/components/CompareSlider';
 import StyleTabs from '@/components/StyleTabs';
 import Timeline from '@/components/Timeline';
 import ContactForm from '@/components/ContactForm';
+import VillaFormats from '@/components/VillaFormats';
 import { DESIGN_LIBRARY, JOURNEY, PROMISE_FORM, PROMISE_HERO, PROMISE_POINTS, VILLA_FORMATS } from '@/data/promise';
 import { brandText } from '@/lib/brandText';
 
@@ -66,18 +67,7 @@ export default function PromisePage() {
       <section className="section">
         <div className="wrap">
           <SectionHead label="Villa formats" title="Sized for your plot." />
-          <div className="grid-3">
-            {VILLA_FORMATS.map((f) => (
-              <div className="card format" key={f.code}>
-                <span className="code">{f.code}</span>
-                <h3>{f.name}</h3>
-                <p className="muted">{f.text}</p>
-                <dl>
-                  {f.specs.map(([k, v]) => [<dt key={`${k}-t`}>{k}</dt>, <dd key={`${k}-d`}>{v}</dd>])}
-                </dl>
-              </div>
-            ))}
-          </div>
+          <VillaFormats formats={VILLA_FORMATS} />
         </div>
       </section>
 
