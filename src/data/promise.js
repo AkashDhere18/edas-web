@@ -226,11 +226,119 @@ export const VILLA_STYLES = [
   },
 ];
 
-export const DESIGN_LIBRARY = [
-  { image: '/images/board-24-mediterranean.webp', alt: 'Mediterranean villa design', caption: 'Mediterranean' },
-  { image: '/images/board-28-tropical.webp', alt: 'Tropical villa design', caption: 'Tropical' },
-  { image: '/images/board-40-contemporary.webp', alt: 'Contemporary villa design', caption: 'Contemporary' },
+// export const DESIGN_LIBRARY = [
+//   { image: '/images/board-24-mediterranean.webp', alt: 'Mediterranean villa design', caption: 'Mediterranean' },
+//   { image: '/images/board-28-tropical.webp', alt: 'Tropical villa design', caption: 'Tropical' },
+//   { image: '/images/board-40-contemporary.webp', alt: 'Contemporary villa design', caption: 'Contemporary' },
+// ];
+
+// Design library (The EDAS Promise page): every plot with its design options (one exterior per style).
+// Add a plot's images to "options" and it appears automatically; plots with no options are hidden.
+// Optional fields: size, format (shown on the card when filled in).
+// Suggested image names: /images/plots/plot-42-mediterranean.webp
+// export const PLOT_DESIGNS = [
+//   { plot: '7', options: [] },
+//   { plot: '11', options: [] },
+//   { plot: '16', options: [] },
+//   { plot: '22', options: [] },
+//   {
+//     plot: '24',
+//     options: [
+//       { style: 'Mediterranean', image: '/images/render-24-mediterranean.webp' },
+//       { style: 'Modern Contemporary', image: '/images/render-24-contemporary.webp' },
+//     ],
+//   },
+//   { plot: '28', options: [{ style: 'Tropical', image: '/images/render-28-tropical.webp' }] },
+//   { plot: '31', options: [{ style: 'Mediterranean', image: '/images/render-31-mediterranean.webp' }] },
+//   { plot: '40', options: [{ style: 'Modern Contemporary', image: '/images/render-40-contemporary.webp' }] },
+//   { plot: '42', options: [] },
+// ];
+
+// Design library (The EDAS Promise page): every plot with its design options (one exterior per style).
+// Each option has a full image (viewer) and a light "-sm" version (cards) in public/images/plots/.
+// Optional per option: label (shown instead of the style, e.g. a second view of the same style).
+// Optional per plot: size, format (shown on the card). Plots with no options are hidden.
+const img = (name) => ({ image: `/images/plots/plot-${name}.webp`, thumb: `/images/plots/plot-${name}-sm.webp` });
+
+export const PLOT_DESIGNS = [
+  {
+    plot: '7',
+    options: [
+      { style: 'Mediterranean', ...img('7-mediterranean') },
+      { style: 'Tropical', ...img('7-tropical') },
+      { style: 'Luxury Contemporary', ...img('7-luxury-contemporary') },
+      { style: 'Modern European', ...img('7-modern-european') },
+      { style: 'Neo-Classical', ...img('7-neo-classical') },
+    ],
+  },
+  {
+    plot: '11',
+    options: [
+      { style: 'Mediterranean', ...img('11-mediterranean') },
+      { style: 'Tropical', ...img('11-tropical') },
+      { style: 'Luxury Contemporary', ...img('11-luxury-contemporary') },
+      { style: 'Modern European', ...img('11-modern-european') },
+    ],
+  },
+  {
+    plot: '16',
+    options: [
+      { style: 'Mediterranean', ...img('16-mediterranean') },
+      { style: 'Tropical', ...img('16-tropical') },
+      { style: 'Luxury Contemporary', ...img('16-luxury-contemporary') },
+      { style: 'Modern European', ...img('16-modern-european') },
+    ],
+  },
+  {
+    plot: '22',
+    options: [
+      { style: 'Modern European', label: 'Modern European · View 1', ...img('22-modern-european') },
+      { style: 'Modern European', label: 'Modern European · View 2', ...img('22-modern-european-2') },
+    ],
+  },
+  {
+    plot: '24',
+    options: [
+      { style: 'Mediterranean', ...img('24-mediterranean') },
+      { style: 'Luxury Contemporary', ...img('24-luxury-contemporary') },
+      { style: 'Modern European', ...img('24-modern-european') },
+    ],
+  },
+  {
+    plot: '28',
+    options: [
+      { style: 'Tropical', ...img('28-tropical') },
+      { style: 'Modern European', ...img('28-modern-european') },
+    ],
+  },
+  {
+    plot: '31',
+    options: [
+      { style: 'Mediterranean', ...img('31-mediterranean') },
+      { style: 'Tropical', ...img('31-tropical') },
+      { style: 'Luxury Contemporary', ...img('31-luxury-contemporary') },
+      { style: 'Modern European', ...img('31-modern-european') },
+    ],
+  },
+  {
+    plot: '40',
+    options: [
+      { style: 'Mediterranean', ...img('40-mediterranean') },
+      { style: 'Tropical', ...img('40-tropical') },
+      { style: 'Luxury Contemporary', ...img('40-luxury-contemporary') },
+      { style: 'Modern European', ...img('40-modern-european') },
+    ],
+  },
+  {
+    plot: '42',
+    options: [
+      { style: 'Mediterranean', ...img('42-mediterranean') },
+      { style: 'Modern Contemporary', ...img('42-modern-contemporary') },
+    ],
+  },
 ];
+
+
 
 // export const VILLA_FORMATS = [
 //   {

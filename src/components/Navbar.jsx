@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { NAV, SITE } from '@/data/site';
 import { ROUTES } from '@/lib/routes';
 import { ChevronDownIcon } from './Icons';
-import ThemeToggle from './ThemeToggle';
+// import ThemeToggle from './ThemeToggle';
 
 const DESKTOP_HOVER = '(hover: hover) and (min-width: 861px)';
 
@@ -97,7 +97,7 @@ export default function Navbar() {
             ),
           )}
         </nav>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
     </header>
   );

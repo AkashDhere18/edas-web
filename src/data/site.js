@@ -15,14 +15,16 @@ export const NAV = [
   { label: 'Home', href: ROUTES.home },
   { label: 'About Us', href: ROUTES.about },
   { label: 'Advisory', href: ROUTES.advisory },
-  {
-    label: 'Construction',
-    id: 'dd-construction',
-    children: [
-      { label: 'Turnkey Construction', text: 'Homes, hotels and commercial buildings', href: ROUTES.turnkey },
-      { label: 'The EDAS Promise', text: 'Design-ready villas on your plot', href: ROUTES.promise },
-    ],
-  },
+  { label: 'The EDAS Promise', href: ROUTES.promise },
+  { label: 'Turnkey Construction', href: ROUTES.turnkey },
+  // {
+  //   label: 'Construction',
+  //   id: 'dd-construction',
+  //   children: [
+  //     { label: 'Turnkey Construction', text: 'Homes, hotels and commercial buildings', href: ROUTES.turnkey },
+  //     { label: 'The EDAS Promise', text: 'Design-ready villas on your plot', href: ROUTES.promise },
+  //   ],
+  // },
   { label: 'Careers', href: ROUTES.careers },
   { label: 'Contact Us', href: ROUTES.contact, cta: true },
 ];

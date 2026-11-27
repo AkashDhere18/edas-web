@@ -1,6 +1,7 @@
 import ContactCard from '@/components/ContactCard';
 import ContactForm from '@/components/ContactForm';
 import OfficeList from '@/components/OfficeList';
+import ContactTeamCard from '@/components/ContactTeamCard';
 import { CONTACT_FORM, CONTACT_OFFICES, CONTACT_PEOPLE } from '@/data/contact';
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function ContactPage() {
       <section className="section tight">
         <div className="wrap contact-cards">
           {CONTACT_PEOPLE.map((p) => (
-            <ContactCard key={p.name} {...p} />
+            <ContactTeamCard key={p.name} {...p} />
           ))}
         </div>
       </section>

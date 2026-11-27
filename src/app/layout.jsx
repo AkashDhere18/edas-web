@@ -27,14 +27,8 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     // Dark is the default. The script applies a visitor's saved choice before the page paints (no flash).
-    <html lang="en" data-theme="dark" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem('edas-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}`,
-          }}
-        />
-      </head>
+    <html lang="en" data-theme="light">
+      
       <body>
         <TopBar />
         <Navbar />

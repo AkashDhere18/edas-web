@@ -5,7 +5,8 @@ import StyleTabs from '@/components/StyleTabs';
 import Timeline from '@/components/Timeline';
 import ContactForm from '@/components/ContactForm';
 import VillaFormats from '@/components/VillaFormats';
-import { DESIGN_LIBRARY, JOURNEY, PROMISE_FORM, PROMISE_HERO, PROMISE_POINTS, VILLA_FORMATS } from '@/data/promise';
+import PlotGallery from '@/components/PlotGallery';
+import { PLOT_DESIGNS, JOURNEY, PROMISE_FORM, PROMISE_HERO, PROMISE_POINTS, VILLA_FORMATS } from '@/data/promise';
 import { brandText } from '@/lib/brandText';
 
 export const metadata = {
@@ -48,7 +49,7 @@ export default function PromisePage() {
         </div>
       </section>
 
-      <section className="section alt">
+      {/* <section className="section alt">
         <div className="wrap">
           <SectionHead label="Design library" title="Every plot, its own design.">
             <p className="muted" style={{ maxWidth: '42ch' }}>Designs and material palettes prepared for individual plots at Veda Monteza.</p>
@@ -61,6 +62,14 @@ export default function PromisePage() {
               </figure>
             ))}
           </div>
+        </div>
+      </section> */}
+      <section className="section alt" id="design-library">
+        <div className="wrap">
+          <SectionHead label="Design library" title="Every plot, its own design.">
+            <p className="muted" style={{ maxWidth: '42ch' }}>Each plot at Veda Monteza comes with design options in different styles. Choose a style, or open a plot to compare its designs.</p>
+          </SectionHead>
+          <PlotGallery plots={PLOT_DESIGNS} />
         </div>
       </section>
 
@@ -103,7 +112,7 @@ export default function PromisePage() {
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section alt" id="vision-book">
         <div className="wrap two" style={{ alignItems: 'start' }}>
           <div className="stack">
             <span className="label">Get started</span>

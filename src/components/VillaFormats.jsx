@@ -10,7 +10,7 @@ export default function VillaFormats({ formats }) {
           </div>
           <div className="fmt-body">
             <span className="fmt-code">{f.code}</span>
-            <h3>{f.name}</h3>
+            <h4>{f.name}</h4>
             <p className="fmt-text">{f.text}</p>
             <dl className="fmt-specs">
               {f.specs.map(([k, v]) => (

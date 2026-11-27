@@ -13,6 +13,17 @@ export const HERO_SLIDES = [
     ],
   },
   {
+    image: '/images/streets-to-strength.jpeg',
+    position: '60% center', // focus point when the screen crops the image (phones, laptops)
+    label: 'Lender & special situations',
+    title: 'Stress to Strength.',
+    text: 'Turning complexity into clarity. Challenges into opportunities.',
+    actions: [
+      { label: 'Explore Advisory', href: ROUTES.advisory, style: 'btn-white' },
+      { label: 'Contact Us', href: ROUTES.contact, style: 'btn-line-white' },
+    ],
+  },
+  {
     image: '/images/hero-asset-advisory.webp',
     position: '50% center',
     label: 'EDAS Asset Advisors',
@@ -29,17 +40,6 @@ export const HERO_SLIDES = [
     actions: [
       { label: 'Explore Construction', href: ROUTES.turnkey, style: 'btn-white' },
       { label: 'The EDAS Promise', href: ROUTES.promise, style: 'btn-line-white' },
-    ],
-  },
-    {
-    image: '/images/streets-to-strength.jpeg',
-    position: '60% center', // focus point when the screen crops the image (phones, laptops)
-    label: 'Lender & special situations',
-    title: 'Stress to Strength.',
-    text: 'Turning complexity into clarity. Challenges into opportunities.',
-    actions: [
-      { label: 'Explore Advisory', href: ROUTES.advisory, style: 'btn-white' },
-      { label: 'Contact Us', href: ROUTES.contact, style: 'btn-line-white' },
     ],
   },
 ];
@@ -78,7 +78,7 @@ export const BUSINESSES = [
 ];
 
 export const PROMISE_TEASER = {
-  image: '/images/render-24-mediterranean.webp',
+  image: '/images/styles/mediterranean-exterior.webp',
   alt: 'Coastal Mediterranean villa design for Veda Monteza',
   label: 'The EDAS Promise',
   title: 'Your plot. Your villa. One complete journey.',
