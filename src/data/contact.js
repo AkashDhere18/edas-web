@@ -14,7 +14,7 @@ export const CONTACT_OFFICES = [
   {
     city: 'Western Maharashtra',
     address: 'Office 105 & 106, Imperial Square, Ramaudyan Road, Miraj, Sangli 416410',
-    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Imperial+Square+Ramaudyan+Road+Miraj',
+    mapUrl: 'https://www.google.com/maps/place/RMR2%2BQC9,+Miraj,+Rama+Udyan,+Sangli+Miraj+Kupwad,+Maharashtra+416410/@16.8420692,74.6504924,417m/data=!3m1!1e3!4m9!1m2!7m1!2e1!3m5!1s0x3bc123a8980b5af7:0xfd38d15fe22320e8!8m2!3d16.8419501!4d74.6510907!16s%2Fg%2F11y2x8l8r7?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D',
   },
 ];
 

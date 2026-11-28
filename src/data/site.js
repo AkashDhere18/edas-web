@@ -2,6 +2,7 @@ import { ROUTES } from '@/lib/routes';
 
 export const SITE = {
   name: 'EDAS Group',
+  url: 'https://edasprojects.com', // live address, no trailing slash (used for sitemap, robots and share previews)
   description:
     'EDAS Group: real estate advisory (EDAS Asset Advisors) and turnkey construction (EDAS Projects) under one accountable partner.',
   email: 'coordination@edasprojects.com',
@@ -50,7 +51,7 @@ export const FOOTER = {
       ],
     },
   ],
-  addresses: ['Dadar, Mumbai', 'Western Maharashtra'],
+  addresses: ['Dadar, Mumbai', 'Miraj, Maharashtra'],
   legal: [
     'EDAS Projects Private Limited (GSTIN 27AAICE4972E2ZG) and EDAS Asset Advisors LLP.',
     '© 2026 EDAS Group · Innovate | Build | Inspire',

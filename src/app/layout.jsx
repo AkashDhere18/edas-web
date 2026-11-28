@@ -14,8 +14,17 @@ import ScrollToTop from '@/components/ScrollToTop';
 import { SITE } from '@/data/site';
 
 export const metadata = {
+  metadataBase: new URL(SITE.url),
   title: SITE.name,
   description: SITE.description,
+  openGraph: {
+    type: 'website',
+    siteName: SITE.name,
+    title: SITE.name,
+    description: SITE.description,
+    locale: 'en_IN',
+  },
+  twitter: { card: 'summary_large_image', title: SITE.name, description: SITE.description },
 };
 
 export const viewport = {
@@ -26,7 +35,6 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    // Dark is the default. The script applies a visitor's saved choice before the page paints (no flash).
     <html lang="en" data-theme="light">
       
       <body>

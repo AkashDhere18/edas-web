@@ -8,8 +8,8 @@ export default function CompareSlider() {
 
   return (
     <div className="compare" style={{ '--pos': `${pos}%` }}>
-      <img src="/images/villa-contemporary.webp" alt="CAD line drawing of a contemporary villa" loading="lazy" />
-      <img className="built" src="/images/villa-cad.svg" alt="Rendered contemporary villa at dusk" loading="lazy" />
+      <img src="/images/villa-contemporary.webp" alt="Rendered contemporary villa at dusk" loading="lazy" />
+      <img className="built" src="/images/villa-cad.svg" alt="CAD line drawing of a contemporary villa" loading="lazy" />
       <input
         type="range"
         min="0"

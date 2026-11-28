@@ -12,55 +12,6 @@ export const PROMISE_POINTS = [
   { label: 'Clarity', title: 'No hidden costs', text: 'Costs follow approved drawings and the BOQ, paid as work progresses.' },
 ];
 
-// export const VILLA_STYLES = [
-//   {
-//     key: 'tr',
-//     name: 'Modern Tropical',
-//     tagline: 'Open, shaded, naturally connected.',
-//     image: '/images/render-28-tropical.webp',
-//     description: 'Deep overhangs, timber louvers and shaded verandahs that make the garden part of the house.',
-//     swatches: [
-//       ['#9B6A3C', 'Teak wood'],
-//       ['#3A3D42', 'Gabled roof'],
-//       ['#B8B2A7', 'Concrete finish'],
-//       ['#A08E76', 'Stone cladding'],
-//       ['#8FA3A2', 'Glass balustrade'],
-//       ['#3B302B', 'Dark louvers'],
-//     ],
-//     plans: ['/images/plot28-gf-plan.webp', '/images/plot28-ff-plan.webp'],
-//   },
-//   {
-//     key: 'me',
-//     name: 'Coastal Mediterranean',
-//     tagline: 'Warm, crafted, timeless.',
-//     image: '/images/render-24-mediterranean.webp',
-//     description: 'Arched openings, terracotta roof tiles, cream stucco and wrought iron for a relaxed holiday feeling.',
-//     swatches: [
-//       ['#C8673F', 'Terracotta tiles'],
-//       ['#EFE6D3', 'Cream stucco'],
-//       ['#6B3E24', 'Dark wood frames'],
-//       ['#2E2A28', 'Wrought iron'],
-//       ['#B89C78', 'Natural stone'],
-//       ['#9A9A96', 'Stone pavers'],
-//     ],
-//     plans: ['/images/plot24-gf-plan.webp', '/images/plot24-ff-plan.webp'],
-//   },
-//   {
-//     key: 'co',
-//     name: 'Luxury Contemporary',
-//     tagline: 'Clean, calm, refined.',
-//     image: '/images/villa-contemporary.webp',
-//     description: 'Strong horizontal lines, warm timber and large glazing that opens the house to the garden.',
-//     swatches: [
-//       ['#ECE8E1', 'Off-white stucco'],
-//       ['#9A6436', 'Teak cladding'],
-//       ['#3A3B3E', 'Dark metal'],
-//       ['#D3CDC2', 'Large-format stone'],
-//       ['#B7CBD0', 'Clear glass'],
-//     ],
-//     plans: ['/images/plan-11-gf.webp', '/images/plan-11-ff.webp'],
-//   },
-// ];
 // "Choose your style" (The EDAS Promise page).
 // Each style has an exterior image (shown first) and an interior image (shown when the image is tapped).
 // Put the images in public/images/styles/. Styles 4–6 are placeholders: replace their text, colours and images.
@@ -82,18 +33,7 @@ export const VILLA_STYLES = [
       materials: ['Stone', 'Wood veneer', 'Textured paint', 'Glass', 'Metal accent'],
       feel: ['Open & airy', 'Modern', 'Sophisticated'],
     },
-    // tagline: 'Open, shaded, naturally connected.',
-    // description: 'Deep overhangs, timber louvers and shaded verandahs that make the garden part of the house.',
-    // exterior: '/images/styles/modern-contemporary-exterior.webp',
-    // interior: '/images/styles/modern-contemporary-interior.webp',
-    // swatches: [
-    //   ['#9B6A3C', 'Teak wood'],
-    //   ['#3A3D42', 'Gabled roof'],
-    //   ['#B8B2A7', 'Concrete finish'],
-    //   ['#A08E76', 'Stone cladding'],
-    //   ['#8FA3A2', 'Glass balustrade'],
-    //   ['#3B302B', 'Dark louvers'],
-    // ],
+    
   },
   {
     key: 'me',
@@ -112,19 +52,8 @@ export const VILLA_STYLES = [
       materials: ['Lime plaster', 'Terracotta', 'Natural stone', 'Wood beams', 'Wrought iron'],
       feel: ['Warm', 'Natural', 'Charming'],
     },
-    // tagline: 'Warm, crafted, timeless.',
-    // description: 'Arched openings, terracotta roof tiles, cream stucco and wrought iron for a relaxed holiday feeling.',
-    // exterior: '/images/styles/mediterranean-exterior.webp',
-    // interior: '/images/styles/mediterranean-interior.webp',
-    // swatches: [
-    //   ['#C8673F', 'Terracotta tiles'],
-    //   ['#EFE6D3', 'Cream stucco'],
-    //   ['#6B3E24', 'Dark wood frames'],
-    //   ['#2E2A28', 'Wrought iron'],
-    //   ['#B89C78', 'Natural stone'],
-    //   ['#9A9A96', 'Stone pavers'],
-    // ],
   },
+  
   // TODO: replace styles 4–6 with the real names, text, colours and images
   {
     key: 'tr',
@@ -143,11 +72,7 @@ export const VILLA_STYLES = [
       materials: ['Rattan / cane', 'Teak wood', 'Natural stone', 'Linen fabric', 'Plant elements'],
       feel: ['Relaxed', 'Natural', 'Indoor–outdoor'],
     },
-    // tagline: 'Short tagline for style four.',
-    // description: 'One or two sentences describing the look, materials and feel of style four.',
-    // exterior: '/images/styles/tropical-exterior.webp',
-    // interior: '/images/styles/tropical-interior.webp',
-    // swatches: [['#B8B2A7', 'Material one'], ['#3A3D42', 'Material two'], ['#9B6A3C', 'Material three']],
+   
   },
   {
     key: 'mi',
@@ -166,11 +91,7 @@ export const VILLA_STYLES = [
       materials: ['Micro cement', 'Light wood', 'Textured paint', 'Glass', 'Matte finish'],
       feel: ['Clean', 'Calm', 'Timeless'],
     },
-    // tagline: 'Short tagline for style five.',
-    // description: 'One or two sentences describing the look, materials and feel of style five.',
-    // exterior: '/images/styles/minimalist-exterior.webp',
-    // interior: '/images/styles/minimalist-interior.webp',
-    // swatches: [['#B8B2A7', 'Material one'], ['#3A3D42', 'Material two'], ['#9B6A3C', 'Material three']],
+   
   },
   {
     key: 'trd',
@@ -189,11 +110,7 @@ export const VILLA_STYLES = [
       materials: ['Natural stone', 'Wood carving', 'Brass accents', 'Handcrafted tiles', 'Textured fabric'],
       feel: ['Heritage', 'Elegant', 'Timeless'],
     },
-    // tagline: 'Short tagline for style six.',
-    // description: 'One or two sentences describing the look, materials and feel of style six.',
-    // exterior: '/images/styles/traditional-exterior.webp',
-    // interior: '/images/styles/traditional-interior.webp',
-    // swatches: [['#B8B2A7', 'Material one'], ['#3A3D42', 'Material two'], ['#9B6A3C', 'Material three']],
+    
   },
   {
     key: 'co',
@@ -212,47 +129,10 @@ export const VILLA_STYLES = [
       materials: ['Marble / stone', 'Wood veneer', 'Metal accent', 'Textured walls', 'Premium fabric'],
       feel: ['Premium', 'Sophisticated', 'Iconic'],
     },
-    // tagline: 'Clean, calm, refined.',
-    // description: 'Strong horizontal lines, warm timber and large glazing that opens the house to the garden.',
-    // exterior: '/images/styles/luxury-contemporary-exterior.webp',
-    // interior: '/images/styles/luxury-contemporary-interior.webp',
-    // swatches: [
-    //   ['#ECE8E1', 'Off-white stucco'],
-    //   ['#9A6436', 'Teak cladding'],
-    //   ['#3A3B3E', 'Dark metal'],
-    //   ['#D3CDC2', 'Large-format stone'],
-    //   ['#B7CBD0', 'Clear glass'],
-    // ],
+   
   },
 ];
 
-// export const DESIGN_LIBRARY = [
-//   { image: '/images/board-24-mediterranean.webp', alt: 'Mediterranean villa design', caption: 'Mediterranean' },
-//   { image: '/images/board-28-tropical.webp', alt: 'Tropical villa design', caption: 'Tropical' },
-//   { image: '/images/board-40-contemporary.webp', alt: 'Contemporary villa design', caption: 'Contemporary' },
-// ];
-
-// Design library (The EDAS Promise page): every plot with its design options (one exterior per style).
-// Add a plot's images to "options" and it appears automatically; plots with no options are hidden.
-// Optional fields: size, format (shown on the card when filled in).
-// Suggested image names: /images/plots/plot-42-mediterranean.webp
-// export const PLOT_DESIGNS = [
-//   { plot: '7', options: [] },
-//   { plot: '11', options: [] },
-//   { plot: '16', options: [] },
-//   { plot: '22', options: [] },
-//   {
-//     plot: '24',
-//     options: [
-//       { style: 'Mediterranean', image: '/images/render-24-mediterranean.webp' },
-//       { style: 'Modern Contemporary', image: '/images/render-24-contemporary.webp' },
-//     ],
-//   },
-//   { plot: '28', options: [{ style: 'Tropical', image: '/images/render-28-tropical.webp' }] },
-//   { plot: '31', options: [{ style: 'Mediterranean', image: '/images/render-31-mediterranean.webp' }] },
-//   { plot: '40', options: [{ style: 'Modern Contemporary', image: '/images/render-40-contemporary.webp' }] },
-//   { plot: '42', options: [] },
-// ];
 
 // Design library (The EDAS Promise page): every plot with its design options (one exterior per style).
 // Each option has a full image (viewer) and a light "-sm" version (cards) in public/images/plots/.
@@ -399,19 +279,6 @@ export const JOURNEY = [
   { title: 'Your home', text: 'Optional interiors, landscape and pool' },
 ];
 
-// export const PROMISE_FORM = {
-//   email: 'coordination@edasprojects.com',
-//   fields: [
-//     { id: 'v-name', label: 'Name', type: 'text', autoComplete: 'name', required: true },
-//     { id: 'v-phone', label: 'Phone', type: 'tel', autoComplete: 'tel', required: true },
-//     { id: 'v-loc', label: 'Plot location', type: 'text' },
-//     { id: 'v-size', label: 'Plot size (sq ft)', type: 'text' },
-//     { id: 'v-style', label: 'Preferred style', options: ['Not sure yet', 'Modern Tropical', 'Coastal Mediterranean', 'Luxury Contemporary'] },
-//     { id: 'v-when', label: 'When to start', options: ['Within 3 months', '3–6 months', '6–12 months', 'Just exploring'] },
-//   ],
-//   messageId: 'coo-msg',
-//   submitLabel: 'Request vision book',
-// };
 
 export const PROMISE_FORM = {
   id: 'promise',
