@@ -10,12 +10,12 @@ export const TURNKEY_HERO = {
 
 // "icon" names match CAPABILITY_ICONS in components/Icons.jsx
 export const CAPABILITIES = [
-  { icon: 'contracting', title: 'General contracting', text: 'Turnkey construction of residential and commercial buildings.' },
-  { icon: 'villa', title: 'Villas & residences', text: 'Private homes, including design-ready villas under the **EDAS Promise**.' },
-  { icon: 'interiors', title: 'Interiors & fit-outs', text: 'High-end fit-outs for homes, hospitality and offices.' },
-  { icon: 'facade', title: 'Retrofitting & façades', text: 'Structural retrofitting, façade works and safety upgrades.' },
-  { icon: 'waterproofing', title: 'Waterproofing', text: 'Basements, terraces, podiums and wet areas.' },
-  { icon: 'fabrication', title: 'Fabrication & infrastructure', text: 'Steel structures, roads, utilities and HT/LT electrical works.' },
+  { icon: 'contracting', title: 'General contracting', text: 'Turnkey construction of residential and commercial buildings.',image: '/images/capabilities/contracting.webp' },
+  { icon: 'villa', title: 'Villas & residences', text: 'Private homes, including design-ready villas under the **EDAS Promise**.',image: '/images/capabilities/villa.webp' },
+  { icon: 'interiors', title: 'Interiors & fit-outs', text: 'High-end fit-outs for homes, hospitality and offices.',image: '/images/capabilities/interiors.webp' },
+  { icon: 'facade', title: 'Retrofitting & façades', text: 'Structural retrofitting, façade works and safety upgrades.',image: '/images/capabilities/facade.webp' },
+  { icon: 'waterproofing', title: 'Waterproofing', text: 'Protection that lasts. Quality that holds',image: '/images/capabilities/waterproofing.webp' },
+  { icon: 'fabrication', title: 'Fabrication & infrastructure', text: 'Steel structures, roads, utilities and HT/LT electrical works.', image: '/images/capabilities/fabrication.webp' },
 ];
 
 export const TURNKEY_STEPS = [
@@ -54,6 +54,8 @@ export const PROJECTS = [
     meta: ['G+7 hotel', '52,000 sq ft'],
   },
   {
+    image: '/images/project-imperial-square.webp',
+    alt: 'Imperial Square, Miraj',
     status: 'done',
     statusLabel: 'Completed',
     title: 'Imperial Square, Miraj',

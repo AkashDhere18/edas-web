@@ -5,6 +5,7 @@ import StyleTabs from '@/components/StyleTabs';
 import Timeline from '@/components/Timeline';
 import ContactForm from '@/components/ContactForm';
 import VillaFormats from '@/components/VillaFormats';
+import DesignGallery from '@/components/DesignGallery';
 import PlotGallery from '@/components/PlotGallery';
 import { PLOT_DESIGNS, JOURNEY, PROMISE_FORM, PROMISE_HERO, PROMISE_POINTS, VILLA_FORMATS } from '@/data/promise';
 import { brandText } from '@/lib/brandText';
@@ -66,10 +67,10 @@ export default function PromisePage() {
       </section> */}
       <section className="section alt" id="design-library">
         <div className="wrap">
-          <SectionHead label="Design library" title="Every plot, its own design.">
-            <p className="muted" style={{ maxWidth: '42ch' }}>Each plot at Veda Monteza comes with design options in different styles. Choose a style, or open a plot to compare its designs.</p>
+          <SectionHead label="Design library" title="Explore designs by style.">
+            <p className="muted" style={{ maxWidth: '42ch' }}>Villa designs prepared for plots at Veda Monteza. Choose a style to see every design in it, or tap a design to view it full screen.</p>
           </SectionHead>
-          <PlotGallery plots={PLOT_DESIGNS} />
+          <DesignGallery plots={PLOT_DESIGNS} />
         </div>
       </section>
 

@@ -25,6 +25,11 @@ export default function CapabilityCards({ items }) {
     <div className="grid-3 cap-grid">
       {items.map((c, i) => (
         <div className="cap-card" key={c.title}>
+          {c.image && (
+            <span className="cap-bg" aria-hidden="true">
+              <img src={c.image} alt="" loading="lazy" />
+            </span>
+          )}
           <span className="cap-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
           <span className="cap-icon">{CAPABILITY_ICONS[c.icon]}</span>
           <h3>{c.title}</h3>

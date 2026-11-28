@@ -5,8 +5,8 @@ export const SITE = {
   url: 'https://edasprojects.com', // live address, no trailing slash (used for sitemap, robots and share previews)
   description:
     'EDAS Group: real estate advisory (EDAS Asset Advisors) and turnkey construction (EDAS Projects) under one accountable partner.',
-  email: 'coordination@edasprojects.com',
-  phone: '+91 99751 35552',
+  email: 'operations@edasprojects.com',
+  phone: '+91 87679 56623',
   topBarText: 'Real estate advisory & turnkey construction · Mumbai, Alibaug & Western Maharashtra',
   logo: { src: '/images/logo.png', alt: 'EDAS, Innovate | Build | Inspire', width: 520, height: 124 },
 };
@@ -16,8 +16,8 @@ export const NAV = [
   { label: 'Home', href: ROUTES.home },
   { label: 'About Us', href: ROUTES.about },
   { label: 'Advisory', href: ROUTES.advisory },
-  { label: 'The EDAS Promise', href: ROUTES.promise },
   { label: 'Turnkey Construction', href: ROUTES.turnkey },
+  { label: 'The EDAS Promise', href: ROUTES.promise },
   // {
   //   label: 'Construction',
   //   id: 'dd-construction',
