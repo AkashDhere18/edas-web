@@ -775,15 +775,23 @@ html:has(.pv[open]) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { .dg-card { animation: none; } .dg-card img { transition: none; } }
 
 
-/* Turnkey: faded photo behind each capability card */
-.cap-bg { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
-.cap-bg img { width: 100%; height: 100%; object-fit: cover; opacity: .7; filter: saturate(.85); transition: opacity .4s ease, transform .8s ease; }
-.cap-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(200deg, color-mix(in srgb, var(--card) 0%, transparent) 55%, color-mix(in srgb, var(--card) 55%, transparent) 85%, var(--card) 100%); }
-.cap-card:hover .cap-bg img { opacity: 1; transform: scale(1.05); }
-@media (prefers-reduced-motion: reduce) { .cap-bg img { transition: none; } .cap-card:hover .cap-bg img { transform: none; } }
-
-/* Capability cards: darker, easier-to-read text over the photo */
-.cap-card h3 { color: #0F1218; }
-.cap-card p { color: #2E333B; font-weight: 500; }
-
-.cap-card h3, .cap-card p { text-shadow: 0 0 12px rgba(255, 255, 255, .9), 0 0 2px rgba(255, 255, 255, .8); }
+/* Turnkey: "What we build" cards (photo on top, text below) */
+.capx-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 960px) { .capx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .capx-grid { grid-template-columns: 1fr; } }
+.capx { position: relative; display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 16px; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.capx::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%; background: linear-gradient(90deg, var(--accent), var(--brand)); transform: scaleX(0); transform-origin: left; transition: transform .4s ease; }
+.capx-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--alt); }
+.capx-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
+.capx-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12, 17, 30, .35) 0%, rgba(12, 17, 30, 0) 40%); pointer-events: none; }
+.capx-num { position: absolute; top: 12px; right: 16px; z-index: 1; font: 700 1.5rem/1 var(--f-head); color: #fff; letter-spacing: -.01em; text-shadow: 0 2px 10px rgba(0, 0, 0, .35); }
+.capx-body { position: relative; display: grid; gap: 8px; align-content: start; padding: 0 24px 26px; }
+.capx-icon { width: 52px; height: 52px; margin: -26px 0 6px; display: grid; place-items: center; border-radius: 14px; color: #fff; background: var(--accent); box-shadow: 0 0 0 4px var(--card), 0 10px 20px -10px rgba(184, 100, 31, .7); transition: background .3s; }
+.capx-icon svg { width: 24px; height: 24px; }
+.capx h3 { font-size: 1.14rem; color: var(--ink); }
+.capx p { color: #3E444D; font-size: .93rem; line-height: 1.6; }
+.capx:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+.capx:hover::after { transform: scaleX(1); }
+.capx:hover .capx-media img { transform: scale(1.06); }
+.capx:hover .capx-icon { background: var(--brand); }
+@media (prefers-reduced-motion: reduce) { .capx, .capx::after, .capx-media img { transition: none; } .capx:hover, .capx:hover .capx-media img { transform: none; } }
