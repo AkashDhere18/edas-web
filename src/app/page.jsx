@@ -107,7 +107,6 @@ export default function HomePage() {
 
       <ClientsMarquee label="Trusted by developers and lenders" />
 
-      <CtaBand {...CTA} />
     </>
   );
 }

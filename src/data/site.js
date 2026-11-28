@@ -1,8 +1,8 @@
 import { ROUTES } from '@/lib/routes';
 
 export const SITE = {
-  name: 'EDAS Group',
-  url: 'https://edasprojects.com', // live address, no trailing slash (used for sitemap, robots and share previews)
+  name: 'EDAS Group | Real Estate Advisory & Turnkey Solutions',
+  url: 'https://www.edasgroup.in', // live address, no trailing slash (used for sitemap, robots and share previews)
   description:
     'EDAS Group: real estate advisory (EDAS Asset Advisors) and turnkey construction (EDAS Projects) under one accountable partner.',
   email: 'operations@edasprojects.com',
